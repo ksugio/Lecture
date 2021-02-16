@@ -20,8 +20,9 @@ for u3 in range(M[2]):
         XYZ.append(xyz)
 # plot 3D
 XYZ = np.array(XYZ)
-fig = plt.figure(figsize=plt.figaspect(1.0))
+fig = plt.figure(figsize=(6,6))
 ax = fig.add_subplot(111, projection='3d')
+ax.set_box_aspect((1,1,1))
 ax.scatter(XYZ[:,0], XYZ[:,1], XYZ[:,2], s=500)
 ax.set_xlim([-5, 10])
 ax.set_ylim([-1, 14])

@@ -22,7 +22,7 @@ for i in range(nloop):
   R.append(r)
   T.append(t)
 # plot
-print np.mean(R)
+print(np.mean(R))
 plt.plot(T, R)
 plt.xlabel('t')
 plt.ylabel('r')

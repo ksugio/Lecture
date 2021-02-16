@@ -24,8 +24,9 @@ for l in range(HKL[2][0], HKL[2][1]+1):
       Ghkl.append(ghkl)
 # plot 3D
 Ghkl = np.array(Ghkl)
-fig = plt.figure(figsize=plt.figaspect(1.0))
+fig = plt.figure(figsize=(6,6))
 ax = fig.add_subplot(111, projection='3d')
+ax.set_box_aspect((1,1,1))
 ax.scatter(Ghkl[:,0], Ghkl[:,1], Ghkl[:,2], s=100)
 ax.set_xlim([-1.5, 1.5])
 ax.set_ylim([-1.5, 1.5])

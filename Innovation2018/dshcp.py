@@ -43,8 +43,8 @@ for l in range(HKL[2][0], HKL[2][1]+1):
       if gd > 0 and tt > 0 and fg > 1.0e-6:
         Dspace.append([tt, h, k, l, 1.0/gd])
 # print Table
-print '2th, h, k, l, d'
+print('2th, h, k, l, d')
 for tt, h, k, l, d in sorted(Dspace):
-  print '%.3f, %d, %d, %d, %.3f' % (tt, h, k, l, d)
+  print('%.3f, %d, %d, %d, %.3f' % (tt, h, k, l, d))
 
 
